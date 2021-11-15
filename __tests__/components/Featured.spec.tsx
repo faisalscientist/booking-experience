@@ -1,6 +1,6 @@
 import Featured from "components/Featured"
 import { shallow } from "enzyme"
-import { experience } from "../../../testUtils"
+import { experience } from "../../testUtils"
 import { currencySymbol } from "helpers/currencySymbol"
 
 describe("Featured Tests", () => {

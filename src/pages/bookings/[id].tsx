@@ -43,7 +43,6 @@ const Bookings = ({ booking }: BookingProps) => {
   const [tickets, setTickets] = useState<Ticket>({ adults: 1, children: 0 })
   const handleTicketQuantity = (ticketType: string, value: number) => {
     setTickets((prevTicket) => {
-      console.log(prevTicket, { [ticketType]: value })
       return { ...prevTicket, [ticketType]: value }
     })
   }

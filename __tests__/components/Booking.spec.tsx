@@ -1,7 +1,7 @@
 import { shallow } from "enzyme"
 import { currencySymbol } from "helpers/currencySymbol"
 import Booking from "components/Booking"
-import { experience } from "../../../testUtils"
+import { experience } from "../../testUtils"
 
 describe("Booking Tests", () => {
   const wrapper = shallow(

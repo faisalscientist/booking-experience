@@ -1,6 +1,6 @@
 import { shallow } from "enzyme"
 import Hero from "components/Hero"
-import { experience } from "../../../testUtils"
+import { experience } from "../../testUtils"
 
 describe("Hero Tests", () => {
   const wrapper = shallow(<Hero hero={experience} />)

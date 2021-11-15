@@ -1,7 +1,7 @@
 import { shallow } from "enzyme"
 import { currencySymbol } from "helpers/currencySymbol"
 import Carousel from "components/Carousel"
-import { experience } from "../../../testUtils"
+import { experience } from "../../testUtils"
 
 describe("Carousel Tests", () => {
   const wrapper = shallow(<Carousel carousels={[experience, experience]} />)

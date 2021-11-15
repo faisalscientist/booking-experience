@@ -1,5 +1,4 @@
 import { currencySymbol } from "helpers/currencySymbol"
-import { sanityIoImageLoader } from "helpers/imageLoader"
 import Image from "next/image"
 import Link from "next/link"
 import { Booking } from "types/components"
@@ -15,11 +14,11 @@ const Featured = ({ featured }: { featured: Booking[] }) => {
         >
           <div className="relative w-full h-96 md:h-100 my-2">
             <Image
-              loader={sanityIoImageLoader}
               data-testid={`featuredImage${index}`}
               alt={feature.title}
               src={feature.media.large?.url as string}
               layout="fill"
+              quality={100}
               objectFit="cover"
             />
             <div

@@ -21,7 +21,6 @@ const Header = ({
               </div>
             </a>
           </Link>
-          {console.log(!isDetails)}
           {!isDetails ? (
             <>
               <div

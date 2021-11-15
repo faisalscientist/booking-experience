@@ -3,7 +3,6 @@ import Image from "next/image"
 import { currencySymbol } from "helpers/currencySymbol"
 import { MinusIcon, PlusIcon } from "@heroicons/react/outline"
 import { useState } from "react"
-import { sanityIoImageLoader } from "helpers/imageLoader"
 
 const Booking = ({
   booking,
@@ -24,9 +23,10 @@ const Booking = ({
             data-testid="bookingImageBlock"
           >
             <Image
-              loader={sanityIoImageLoader}
+              priority
               data-testid="bookingImage"
               alt={booking.title}
+              quality={100}
               src={
                 booking.media.large
                   ? booking.media.large.url
@@ -69,7 +69,6 @@ const Booking = ({
                       className="w-3/12 bg-black text-white flex justify-center p-2"
                       data-testid={`${ticket}TicketDecrementalButton`}
                       onClick={() => {
-                        console.log(ticket)
                         handleTicketQuantity(
                           ticket,
                           (tickets as unknown as { [id: string]: number })[

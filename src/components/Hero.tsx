@@ -1,5 +1,4 @@
 import { currencySymbol } from "helpers/currencySymbol"
-import { sanityIoImageLoader } from "helpers/imageLoader"
 import Image from "next/image"
 import Link from "next/link"
 import { Booking } from "types/components"
@@ -39,7 +38,7 @@ const Hero = ({ hero }: { hero: Booking }) => {
         </Link>
       </div>
       <Image
-        loader={sanityIoImageLoader}
+        priority
         data-testid="heroImage"
         quality={100}
         layout="responsive"

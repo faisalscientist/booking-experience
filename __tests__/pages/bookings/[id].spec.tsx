@@ -1,7 +1,7 @@
 import { shallow } from "enzyme"
 import fetch from "jest-fetch-mock"
 import Bookings, { getStaticPaths, getStaticProps } from "pages/bookings/[id]"
-import { experience } from "../../../../testUtils"
+import { experience } from "../../../testUtils"
 
 describe("Home Page Test", () => {
   const useRouter = jest.spyOn(require("next/router"), "useRouter")
@@ -22,9 +22,7 @@ describe("Home Page Test", () => {
     }))
     const handleTicketQuantity = jest.fn()
     const submitBooking = jest.fn()
-    handleTicketQuantity.mockImplementation((x = "adults", y: 5) => {
-      console.log(x, y)
-    })
+    handleTicketQuantity.mockImplementation((x = "adults", y: 5) => {})
     const wrapper = shallow(
       <Bookings
         booking={experience}

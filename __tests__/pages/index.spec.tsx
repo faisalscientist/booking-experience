@@ -1,6 +1,6 @@
 import { shallow } from "enzyme"
 import Home, { getStaticProps } from "pages"
-import { experience } from "../../../testUtils"
+import { experience } from "../../testUtils"
 import fetch from "jest-fetch-mock"
 
 describe("Home Page Test", () => {
