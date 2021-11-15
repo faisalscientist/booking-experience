@@ -5,7 +5,7 @@ Web Developer Task
 ## How to run the application on any local machine
 
 ```python
-1. Clone the repository from: https://github.com/faisalscientist/booking-experience.git
+1. Unzip file
 
 2. Run `npm install` from the root of repository
 
